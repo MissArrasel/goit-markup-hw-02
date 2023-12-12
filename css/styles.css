@@ -1,0 +1,51 @@
+:root {
+  --brand-color: #2e2f42;
+  --text-font-family: "Roboto", sans-serif;
+  --header-font-family: "Raleway", sans-serif;
+  --iris-color: IRIS, #4d5ae5;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-links: hover,
+.nav-links: focus {
+  color: red;
+  cursor: pointer;
+}
+
+.nav-links {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+body {
+  font-family: var(--text-font-family);
+}
+
+.logo {
+  color: var(--first-half-logo);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.web {
+  color: var(--first-half-logo);
+}
