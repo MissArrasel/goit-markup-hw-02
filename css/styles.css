@@ -1,353 +1,218 @@
+/* Studio */
 :root {
-  --text-color: #434455;
-  --background-color: #ffffffff;
-  --highlight-color: #3498db;
+  --maincolor: 434455;
 }
 
-body {
+.body-studio {
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffffff;
 }
 
-main {
-  flex: 1; /* Allow the main content to grow and fill the available space */
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.web {
   font-family: "Raleway", sans-serif;
-}
-
-/*HEADER AREA STYLE*/
-header {
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex; /* Make the logo and buttons flex containers */
-  align-items: center; /* Align items vertically in the logo container */
-  margin: 30px;
-}
-
-.logo img {
-  max-width: 100px;
-  margin-right: 10px; /* Add margin between logo and buttons */
-}
-
-.buttons {
-  display: flex;
-  margin-left: auto; /* Move the buttons to the center */
-}
-
-.buttons a {
-  margin-right: 10px;
-  background-color: #fff;
-  color: #333;
-  padding: 5px 10px;
-  text-decoration: none; /* Remove underline from links */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  display: inline-block; /* Make links behave like buttons */
-}
-
-.buttons a:hover {
-  background-color: #3498db;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-.contact-info {
-  text-align: right;
-  display: flex;
-  flex-grow: 1; /* Allow the contact info to take remaining space */
-  justify-content: flex-end; /* Align contact info to the right */
-}
-
-.email,
-.phone {
-  margin-bottom: 5px;
-  color: #333;
-  font-weight: 400;
-  margin-right: 20px;
-}
-
-.contact-info:hover .email,
-.contact-info:focus .email,
-.contact-info:hover .phone,
-.contact-info:focus .phone {
-  color: #3498db; /* Change to the specified color */
-}
-
-/*HEADER AREA STYLE FINISH*/
-
-/*HERO SECTION AREA STYLE*/
-.hero-section {
-  background-color: rgb(1, 19, 81);
-  color: #fff;
-  padding: 50px 0;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-content h1 {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.order-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.order-button:hover {
-  background-color: #2980b9;
-}
-
-/*HERO SECTION AREA STYLE FINISH*/
-
-/*MID SECTION AREA STYLE*/
-.mid-section ul {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default list padding */
-}
-
-.mid-section li {
-  width: 20%;
-  text-align: left;
-  margin: 10px;
-  color: #333;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/*MID SECTION AREA STYLE FINISH*/
-
-/*WHAT WE DO SECTION*/
-.what-we-do-section ul {
-  text-align: center;
-  padding: 30px;
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default list padding */
-}
-
-.what-we-do-section h2 {
+  font-weight: 800;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-/*WHAT WE DO SECTION FINISH*/
-
-/* IMAGE SECTION STYLE */
-.image-section {
-  display: flex;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+.studio {
+  color: #2e2f42;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
 
-.image-section ul {
-  display: flex;
+.list {
   list-style: none;
-  padding: 0;
 }
 
-.image-section li {
-  flex: 0 0 30%;
-  margin: 0 10px; /* Add some margin between items */
+.link {
+  text-decoration: none;
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-}
-
-/*IMGAE SECTION STYLE END*/
-
-/*OUR TEAM SECTION STYLE*/
-/*OUR TEAM SECTION STYLE*/
-.our-team-section {
-  background-color: #f5f0ff;
-  /* Very light purple background */
-  padding: 30px;
-  text-align: center;
-}
-
-.our-team-title {
-  margin: 30px;
-}
-
-.our-team-title h2 {
-  color: #000;
-  /* Black text color */
-  font-size: 24px;
+.index {
+  font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.team-cards-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default list padding */
+.link:hover {
+  color: #404bbf;
 }
 
-.team-card {
-  width: 200px;
-  background-color: #fff;
-  /* White background for each card */
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
-  margin: 10px;
+.link:focus {
+  color: #404bbf;
 }
 
-.team-card img {
-  width: 100%;
+.adress-style {
+  font-style: normal;
 }
 
-.team-card h3 {
-  margin-top: 10px;
+.contact {
+  color: #434455;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-.team-card p {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.4;
-  /* Dark gray text color */
+/* Section1 */
+.first-section {
+  background-color: #2e2f42;
 }
 
-/*OUR TEAM SECTION STYLE END*/
-
-footer {
-  background-color: rgb(1, 19, 81); /* Black background color for the footer */
-  color: #fff; /* White text color */
-  padding: 20px;
+.first-section-title {
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: flex-start; /* Align items to the top */
-  margin-left: 20px; /* Adjust the left margin as needed */
-  padding: 10px; /* Add padding for spacing within the box */
-  max-width: 300px; /* Set a maximum width for the box */
+.first-section-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
-.footer-logo img {
-  max-width: 100px; /* Adjust the size of the logo */
-  margin-right: 10px; /* Add space between logo and text */
+.first-section-button:hover {
+  background-color: #404bbf;
 }
 
-.footer-text p {
-  font-size: 14px;
-  margin: 0;
-  word-wrap: break-word; /* Allow the text to wrap within the box */
+.first-section-button:focus {
+  background-color: #404bbf;
 }
 
-/*PORTFOLIO STYLE BEGIN*/
-
-/* BUTTON SECTION STYLE */
-.portfolio-button-section {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.portfolio-button-section ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio-button-section li {
-  margin: 0 10px;
-}
-
-.portfolio-button {
-  background-color: #f0f0f0; /* Light gray background */
-  color: #3498db; /* Blue text color */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.first-section-button {
   cursor: pointer;
 }
 
-.portfolio-button:hover {
-  background-color: #3498db; /* Blue background on hover */
-  color: #fff; /* White text color on hover */
+/* Section2 */
+.second-section-title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: #ffffffff;
 }
 
-/* CARD SECTION STYLE */
-.card-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.second-section-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-.cards {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* Section3 */
+.third-section-title {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.card {
-  width: calc(30% - 20px); /* Adjusted width with margin */
-  margin: 15px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Section4 */
+.fourth-section {
+  background-color: #f4f4fd;
 }
 
-.card img {
-  width: 70%;
-  border-radius: 5px;
+.fourth-section-title {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  background-color: #ffffffff;
 }
 
-.card-title {
-  margin-top: 10px;
+.background-list-fourth-section {
+  background-color: #ffffffff;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-paragraph {
+  color: #f4f4fd;
+}
+
+.web-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 18px;
-  font-weight: bold;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.studio-footer {
+  color: #f4f4fd;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
 
-.card-description {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #555; /* Dark gray text color */
+/* Portfolio */
+
+.body-portfolio {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+
+/* Row1 */
+.all-button {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.all-button:hover {
+  color: #ffffffff;
+  background-color: #404bbf;
+}
+.all-button:focus {
+  color: #ffffffff;
+  background-color: #404bbf;
+}
+
+.first-row-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.first-row-paragraph {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
